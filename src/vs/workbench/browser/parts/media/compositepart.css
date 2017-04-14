@@ -9,9 +9,27 @@
 
 .monaco-workbench > .part > .composite.title {
 	display: flex;
+	overflow-x: auto;
+}
+
+.monaco-workbench > .part > .composite.title::-webkit-scrollbar {
+	width: 5px;
+	height: 3px;
+}
+
+.monaco-workbench > .part > .composite.title::-webkit-scrollbar-thumb {
+	background-color: rgba(100, 100, 100, 0.4);
+}
+
+.monaco-workbench > .part > .composite.title::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(100, 100, 100, 0.7);
+}
+.monaco-workbench > .part > .composite.title::-webkit-scrollbar-thumb:active {
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .monaco-workbench > .part > .composite.title > .title-actions {
 	flex: 1;
 	padding-left: 5px;
+	min-width: 236px;
 }

@@ -20,6 +20,9 @@
 }
 
 /** Panel Switcher */
+.monaco-workbench > .panel-switcher-container {
+	min-width: 380px;
+}
 
 .monaco-workbench > .part.panel > .title > .panel-switcher-container > .monaco-action-bar {
 	line-height: 35px;
